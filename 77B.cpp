@@ -34,18 +34,9 @@ int main(){
                 break;
             }
         }
-
-        // nếu không tìm được số nào với n chữ số to hơn thì phải tăng lên n + 2 chữ số
-        if (!ok){
-            for (int i = 0; i <= n / 2; i++){
-                cout << 4;
-            }
-            for (int i = 0; i <= n / 2; i++){
-                cout << 7;
-            }
-        }
     }
-    else if (n % 2 == 1){
+    // nếu không tìm được số nào với n chữ số to hơn thì phải tăng lên n + 2 chữ số
+    if (n % 2 == 1 || !ok){
         for (int i = 0; i <= n / 2; i++){
             cout << 4;
         }
